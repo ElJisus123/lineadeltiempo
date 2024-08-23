@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --background-bg: #17181c;
+    color: white;
+    background-color: var(--background-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    display: flex;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: white;
+}
+nav button:hover {
+    background-color: #8e9fcc;
+}
+
+.item {
+    position: relative;
+}
+
+.item:not(:last-child):before {
+    content: '';
+    display: block;
+    background-color: white;
+    width: 3px;
+    position: absolute;
+    top: 15px;
+    height: 100%;
+    left: 36px;
+}
+
+.item .body {
+    border-radius: 8px;
+    padding: 0 10px;
+    max-height: 0;
+    margin-left: 44px;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgb(53, 53, 53);
+    transition: opacity 0.2s ease-out, max-height 0.7s ease-in-out;
+}
+
+.item button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.item button img {
+    height: 20px;
+    transition: 0.4s ease-out;
+    border-radius: 2px;
+}
+
+.item button img:hover{
+    background-color: rgb(89, 89, 89);
+}
+
+.body p{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.title strong {
+    font-size: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 10px 0;
+    margin-inline-end: 1rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.item:has(button.expanded) .body{
+    opacity: 1;
+    max-height: 100vh;
+    display: block;
+}
+
+button.expanded img{
+    transform: rotateZ(90deg);
+}
+
+h1{
+    margin: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}

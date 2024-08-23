@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Fútbol</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>UNA BREVE HISTORIA DEL FÚTBOL</h1>
+    </header>
+    <main>
+        <nav>
+            <button onclick="expandAll()">Expandir Todo</button>
+            <button onclick="collapseAll()">Colapsar Todo</button>
+        </nav>
+        <section>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="chevron-right-regular-24.png" alt="right">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date"> 1863 </span>
+                        <br>
+                        <strong>Nacimiento de la FA</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        En 1863, se fundó la Football Association en Inglaterra, estableciendo las primeras reglas formales del fútbol, lo que marca el nacimiento del fútbol moderno.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="chevron-right-regular-24.png" alt="right">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date"> 1930 </span>
+                        <br>
+                        <strong>Primer Mundial</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        La primera Copa Mundial de la FIFA se celebró en Uruguay en 1930, siendo el país anfitrión también el primer campeón del mundo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="chevron-right-regular-24.png" alt="right">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date"> 1958 </span>
+                        <br>
+                        <strong>El nacimiento de Pelé</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        A los 17 años, Pelé asombró al mundo en el Mundial de Suecia 1958, ganando su primer título mundial y convirtiéndose en una leyenda del fútbol.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
